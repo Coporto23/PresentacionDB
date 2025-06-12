@@ -1,0 +1,459 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; 
+    background-color: #FFF1D5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Header / Seccion información personal */
+.header {
+    background: linear-gradient(135deg, #9FB3DF 0%, #9EC6F3 100%);
+    text-align: center;
+    padding: 50px 0 40px;
+    color: #2A4365;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #1E3A8A;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #1E3A8A;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0.3em 0;
+    color: #1E3A8A;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.profession {
+    color: #2A4365;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.profession::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #1E3A8A;
+    margin: 10px auto;
+    opacity: 0.6;
+}
+
+.description {
+    max-width: 80%;
+    margin: 0 auto 25px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #2A4365;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #1E3A8A;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(30, 58, 138, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: #142B5C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(30, 58, 138, 0.3);
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: url("");
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 40px 0 30px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profession {
+        font-size: 1.1rem;
+    }
+    
+    .description {
+        max-width: 90%;
+        font-size: 0.95rem;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 10px 22px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Sección de Servicios */
+.services {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #BDDDE4 0%, #D4E9F0 100%);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1E3A8A;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones pestañas */
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgba(30, 58, 138, 0.1);
+    color: #1E3A8A;
+    border: 2px solid #1E3A8A;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #1E3A8A;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(30, 58, 138, 0.3);
+}
+
+/* Contenido desptañas */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tab-content h3 {
+    color: #1E3A8A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Animación de entrada suave */
+.tab-content p, .tab-content ul {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Sección Contacto / Footer */
+
+.contact {
+    background: linear-gradient(135deg, #9FB3DF 0%, #9EC6F3 100%);
+    padding: 20px 0;                     /* Reducido de 40px */
+    text-align: center;
+    color: #2A4365;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.contact h2 {
+    color: #1E3A8A;
+    margin-bottom: 15px;                /* Reducido de 30px */
+    font-size: 1.8rem;                  /* Reducido de 2rem */
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;                          /* Reducido de 25px */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;                    /* Ajustado de 20px */
+}
+
+.contact-column {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    padding: 15px;                      /* Reducido de 25px */
+    border-radius: 10px;                /* De 12px a 10px */
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.contact-column:hover {
+    transform: translateY(-3px);       /* Menor desplazamiento */
+    background: rgba(255,255,255,0.35);
+}
+
+.contact-column h3 {
+    color: #1E3A8A;
+    margin-top: 0;
+    margin-bottom: 8px;                 /* De padding-bottom 12px a margin-bottom 8px */
+    font-size: 1.2rem;                  /* De 1.3rem a 1.2rem */
+    border-bottom: 1px solid rgba(30,58,138,0.2);
+    padding-bottom: 6px;                /* Reducido */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;                   /* Ajustado de 20px */
+}
+
+.contact-list li {
+    margin-bottom: 12px;                /* Reducido de 18px */
+    color: #2A4365;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;                  /* Reducido de 1rem */
+}
+
+.map-link {
+    background: rgba(255,255,255,0.6);
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 6px;                    /* Reducido de 8px */
+    padding: 5px 10px;                  /* Reducido de 6px×12px */
+    border-radius: 5px;                 /* De 6px a 5px */
+    display: inline-block;
+    transition: all 0.3s;
+    border: 1px solid rgba(30,58,138,0.2);
+}
+
+.map-link:hover {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.whatsapp-btn,
+.instagram-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;                  /* Reducido de 10px×18px */
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 180px;                   /* Reducido de 200px */
+    margin-top: 10px;                   /* Reducido de 15px */
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    border: 1px solid #1DA851;
+}
+
+.instagram-btn {
+    background: #E1306C;
+    border: 1px solid #C1225B;
+}
+
+.whatsapp-btn:hover,
+.instagram-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 0;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .contact-column {
+        padding: 20px;
+    }
+    
+    .contact-list li {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .map-link {
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        padding: 50px 0;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1, .services h2, .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .description, .contact p {
+        font-size: 1rem;
+    }
+
+    .tab-buttons {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .tab-content {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+        border-radius: 5px !important;
+        margin-bottom: 5px;
+    }
+
+    .tab-content {
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
+
+
+
+
+
