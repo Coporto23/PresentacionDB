@@ -3,241 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Profesional</title>
+    <title>Diana Barrera · Masoterapeuta en Talagante</title>
+    <meta name="description" content="Diana Barrera Orozco, masoterapeuta profesional en Talagante. Masaje deportivo, terapéutico, relajante, descontracturante y reflexología podal. Reserva por WhatsApp.">
+    <meta name="theme-color" content="#F7F1E8">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diana Barrera · Masoterapeuta profesional">
+    <meta property="og:description" content="Masaje deportivo, terapéutico, relajante, descontracturante y reflexología podal en Talagante.">
+    <meta property="og:image" content="https://coporto23.github.io/PresentacionDB/assets/profile.jpg">
+    <meta property="og:locale" content="es_CL">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="profile">
-                <img src="./assets/profile.jpg" alt="Foto del profesional" class="profile-img">
-                <h1>Diana Anais Barrera Orozco</h1>
-                <p class="profession">Masoterapeuta profesional</p>
-                <p class="description">Especializada en masaje deportivo, rehabilitación física y manejo del dolor crónico.</p>
-                <a href="#contact" class="btn">Contactar</a>
-            </div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <!-- Navegación -->
+    <header class="nav" id="top">
+        <div class="container nav-inner">
+            <a href="#top" class="brand">Diana Barrera<span>Masoterapia</span></a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Principal">
+                <a href="#servicios">Servicios</a>
+                <a href="#trayectoria">Trayectoria</a>
+                <a href="#contacto">Contacto</a>
+                <a href="https://w.app/ngfysa" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Reservar</a>
+            </nav>
         </div>
     </header>
 
-    <section class="services">
-        <div class="container">
-            <h2>Información Profesional</h2>
-            <div class="tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="info1">Estudios</button>
-                    <button class="tab-btn" data-tab="info2">Experiencia</button>
-                    <button class="tab-btn" data-tab="info3">Referencias</button>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <p class="eyebrow">Masoterapeuta profesional · Talagante</p>
+                    <h1>Diana Anais<br>Barrera Orozco</h1>
+                    <p class="lead">Especializada en masaje deportivo, rehabilitación física y manejo del dolor crónico. Un espacio para recuperar tu cuerpo y tu bienestar.</p>
+                    <div class="hero-actions">
+                        <a href="https://w.app/ngfysa" class="btn btn-primary" target="_blank" rel="noopener">
+                            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.3-2.3l.9-1-1-2z"/></svg>
+                            Reservar por WhatsApp
+                        </a>
+                        <a href="#trayectoria" class="btn btn-ghost">Ver trayectoria</a>
+                    </div>
                 </div>
-                
-                <div class="tab-content active" id="info1">
-                    <h3>Estudios</h3>
-                    <p>Realicé la carrera de Masoterapia en el Instituto de Formación Técnica ENAC, con una duración de 5 semestres. Esta formación técnico/profesional me permitió adquirir una sólida base en anatomía, fisiología humana, patologías y fundamentos de kinesiología, junto a una preparación práctica intensa en técnicas de masajes terapéuticos, descontracturantes, relajantes, deportivos, drenaje linfático manual, reflexología podal y otras técnicas complementarias.</p>
-                    <p>El plan de estudios incluyó asignaturas enfocadas en el funcionamiento del cuerpo humano y su relación con el masaje. Desarrollé habilidades para intervenir de forma segura y eficaz en personas con distintas necesidades de tratamiento.</p>
-                    <p>La formación se enfocó en comprender el cuerpo humano de manera funcional, aplicando un enfoque ético y centrado en el bien estar físico y emocional del usuario.</p>
+
+                <div class="hero-photo reveal">
+                    <div class="photo-frame">
+                        <img src="./assets/profile.jpg" alt="Diana Barrera, masoterapeuta" width="640" height="640">
+                    </div>
+                    <span class="photo-blob" aria-hidden="true"></span>
                 </div>
-                
-                <div class="tab-content" id="info2">
-                    <h3>Experiencia</h3>
-                    <h4>Experiencia en Prácticas Intermedia y Profesional – Recovery Pro</h4>
-                    <p>Realicé mis dos prácticas (intermedia y laboral profesional) en el centro Recovery Pro, especializado en recuperación deportiva y terapias musculoesqueléticas. Durante este periodo, trabajé con una amplia variedad de usuarios, incluyendo personas con dolor crónico, pacientes sedentarios y deportistas de distintas disciplinas.</p>
-                    <p>Atendí a personas con dolor persistente, tensiones musculares y patologías relacionadas al sedentarismo, aplicando técnicas de masaje terapéutico, descontracturante y relajante, según la condición de cada paciente. También traté a personas activas físicamente, especialmente deportistas de alto rendimiento.</p>
-                    <p>Dentro de los deportistas que atendí se encuentran futbolistas, tenistas, corredores, halterofilistas, calisténicos y patinadoras profesionales, enfocando las sesiones en recuperación muscular, descarga, manejo del dolor y prevención de lesiones.</p>
-                    <p>Tuve la oportunidad de participar como masoterapeuta en distintos eventos deportivos y comunitarios, tales como:</p>
-                    <ul>
-                        <li>Carreras recreativas y competitivas para adultos mayores y juveniles, realizando masaje postcompetencia</li>
-                        <li>Eventos de apoyo a personas en rehabilitación por consumo problemático de sustancias, aplicando masaje relajante para disminuir la tensión emocional y física</li>
-                        <li>Campeonato juvenil de tenis, donde se brindó atención antes y después de los partidos</li>
-                        <li>Jornada de entrenamiento de patinadoras juveniles, acompañando su preparación física con masaje y técnicas específicas</li>
+            </div>
+
+            <div class="container">
+                <ul class="highlights reveal">
+                    <li><strong>ENAC</strong><span>Formación técnica en Masoterapia</span></li>
+                    <li><strong>2</strong><span>Distinciones académicas consecutivas</span></li>
+                    <li><strong>Deporte</strong><span>Experiencia con deportistas de alto rendimiento</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="section" id="servicios">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">Mis servicios</p>
+                    <h2>Terapias para cada necesidad</h2>
+                    <p>Cada sesión se adapta a tu condición y objetivo: rendimiento, alivio del dolor o simplemente descanso.</p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="14" cy="4" r="2"/><path d="M8 21l3-6 3 2v5M6 12l3-4 4 1 3 3 3 1M11 15l-2-3"/></svg>
+                        </div>
+                        <h3>Masaje deportivo</h3>
+                        <p>Terapia manual enfocada en mejorar el rendimiento físico, prevenir lesiones y acelerar la recuperación muscular. Se aplica antes, durante o después de la actividad física, según el objetivo.</p>
+                        <details>
+                            <summary>Ver beneficios</summary>
+                            <ul class="check-list">
+                                <li>Prevención de lesiones</li>
+                                <li>Recuperación muscular</li>
+                                <li>Alivio del dolor</li>
+                                <li>Mejora el rendimiento</li>
+                                <li>Mejora la flexibilidad</li>
+                                <li>Reduce la tensión muscular acumulada</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/><path d="M8.5 12h2l1-2 1.5 4 1-2h1.5"/></svg>
+                        </div>
+                        <h3>Masaje terapéutico</h3>
+                        <p>Técnica manual para aliviar dolores musculares, mejorar la movilidad, reducir tensiones y favorecer la recuperación de lesiones.</p>
+                        <details>
+                            <summary>Afecciones que trata</summary>
+                            <ul class="check-list">
+                                <li>Contracturas musculares</li>
+                                <li>Lumbalgia o lumbago (dolor en la zona lumbar)</li>
+                                <li>Dorsalgia (dolor en la zona dorsal)</li>
+                                <li>Cervicalgia (dolor en la zona del cuello)</li>
+                                <li>Esguinces leves (etapa subaguda o crónica)</li>
+                                <li>Tendinopatías</li>
+                                <li>Ciática (dolor por irritación del nervio ciático)</li>
+                                <li>Sobrecargas musculares</li>
+                                <li>Lesiones por esfuerzo repetitivo (por ejemplo, síndrome del túnel carpiano)</li>
+                                <li>Dolores posturales crónicos</li>
+                                <li>Recuperación muscular postquirúrgica (con indicación médica)</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3c3 3 4 6 4 9a4 4 0 0 1-8 0c0-3 1-6 4-9z"/><path d="M4 20c2.5-1.5 5.5-1.5 8 0s5.5 1.5 8 0"/></svg>
+                        </div>
+                        <h3>Masaje relajante</h3>
+                        <p>Técnica suave y lenta, con movimientos largos, envolventes y rítmicos que estimulan el sistema nervioso parasimpático para calmar el cuerpo y la mente.</p>
+                        <details>
+                            <summary>Ver beneficios</summary>
+                            <ul class="check-list">
+                                <li>Reduce el estrés y la ansiedad</li>
+                                <li>Mejora la calidad del sueño</li>
+                                <li>Alivia dolores y tensiones musculares leves</li>
+                                <li>Favorece la circulación sanguínea y linfática</li>
+                                <li>Aporta una sensación profunda de calma y bienestar</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 6c-2 1-3 3-3 6s1 5 3 6M16 6c2 1 3 3 3 6s-1 5-3 6"/><path d="M9 10h6M9 14h6"/></svg>
+                        </div>
+                        <h3>Masaje descontracturante</h3>
+                        <p>Libera tensiones musculares profundas y trata contracturas provocadas por estrés, malas posturas, esfuerzo físico o sedentarismo, con maniobras firmes en espalda, cuello y hombros.</p>
+                        <details>
+                            <summary>Ver beneficios</summary>
+                            <ul class="check-list">
+                                <li>Alivia dolores musculares causados por contracturas</li>
+                                <li>Mejora la flexibilidad y movilidad de los tejidos</li>
+                                <li>Ayuda a corregir la postura al liberar zonas rígidas</li>
+                                <li>Mejora la circulación sanguínea en áreas afectadas</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M9 3c-2.5 0-4 2.5-4 6 0 4 1 6 1 8.5S7.5 21 9.5 21s3-1.5 3-3.5-1-3.5-1-6S12 6 12 5s-1-2-3-2z"/><circle cx="15.5" cy="5" r="1"/><circle cx="17.5" cy="7.5" r="1"/><circle cx="18.5" cy="10.5" r="1"/></svg>
+                        </div>
+                        <h3>Reflexología podal</h3>
+                        <p>Estimulación de zonas reflejas en la planta del pie asociadas a distintos órganos y sistemas, para inducir relajación, equilibrio global y autorregulación del organismo.</p>
+                        <details>
+                            <summary>Ver beneficios</summary>
+                            <ul class="check-list">
+                                <li>Relajación y reducción del estrés</li>
+                                <li>Mejora de la circulación sanguínea local, con sensación de ligereza en piernas y pies</li>
+                                <li>Alivio de molestias: muchas personas perciben menos cefaleas tensionales, fatiga o malestares digestivos leves como consecuencia de la relajación general</li>
+                                <li>Conciencia corporal: permite detectar zonas de tensión o sensibilidad en los pies que suelen reflejar patrones posturales o emocionales</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <aside class="service-card service-cta reveal">
+                        <h3>¿No sabes cuál elegir?</h3>
+                        <p>Escríbeme, cuéntame qué sientes y te recomiendo la terapia más adecuada para ti.</p>
+                        <a href="https://w.app/ngfysa" class="btn btn-light" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trayectoria -->
+        <section class="section section-alt" id="trayectoria">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">Trayectoria</p>
+                    <h2>Formación y experiencia</h2>
+                </header>
+
+                <div class="cv-grid">
+                    <article class="cv-card reveal">
+                        <p class="cv-label">Formación</p>
+                        <h3>Técnico en Masoterapia</h3>
+                        <p class="cv-meta">Instituto de Formación Técnica ENAC · 5 semestres</p>
+                        <p>Sólida base en anatomía, fisiología humana, patologías y fundamentos de kinesiología, junto a una preparación práctica intensa en masaje terapéutico, descontracturante, relajante y deportivo, drenaje linfático manual, reflexología podal y otras técnicas complementarias.</p>
+                        <p>Una formación centrada en comprender el cuerpo humano de manera funcional, con un enfoque ético y orientado al bienestar físico y emocional de cada persona, para intervenir de forma segura y eficaz según sus necesidades.</p>
+                    </article>
+
+                    <article class="cv-card cv-award reveal">
+                        <div class="award-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+                        </div>
+                        <p class="cv-label">Logros académicos</p>
+                        <h3>Dos distinciones consecutivas</h3>
+                        <p>Reconocida en dos años consecutivos por desempeño, compromiso y excelencia en el proceso formativo. Distinciones otorgadas oficialmente por la institución en ceremonia académica, destacando entre los mejores estudiantes del programa.</p>
+                    </article>
+                </div>
+
+                <article class="cv-card cv-experience reveal">
+                    <p class="cv-label">Experiencia</p>
+                    <h3>Recovery Pro</h3>
+                    <p class="cv-meta">Práctica intermedia y práctica profesional · Centro de recuperación deportiva y terapias musculoesqueléticas</p>
+                    <p>Atención a una amplia variedad de usuarios: personas con dolor crónico o persistente, tensiones musculares y patologías asociadas al sedentarismo, y personas físicamente activas, especialmente deportistas de alto rendimiento. Sesiones enfocadas en recuperación muscular, descarga, manejo del dolor y prevención de lesiones.</p>
+
+                    <div class="exp-blocks">
+                        <div>
+                            <h4>Deportistas atendidos</h4>
+                            <ul class="chips">
+                                <li>Fútbol</li>
+                                <li>Tenis</li>
+                                <li>Running</li>
+                                <li>Halterofilia</li>
+                                <li>Calistenia</li>
+                                <li>Patinaje profesional</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Técnicas y equipos</h4>
+                            <ul class="chips">
+                                <li>TENS</li>
+                                <li>Presoterapia</li>
+                                <li>Crioterapia</li>
+                                <li>Termoterapia</li>
+                                <li>Ventosas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Eventos deportivos y comunitarios</h4>
+                    <ul class="timeline">
+                        <li>Carreras recreativas y competitivas para adultos mayores y juveniles, con masaje postcompetencia.</li>
+                        <li>Eventos de apoyo a personas en rehabilitación por consumo problemático de sustancias, con masaje relajante para disminuir la tensión emocional y física.</li>
+                        <li>Campeonato juvenil de tenis, con atención antes y después de los partidos.</li>
+                        <li>Jornada de entrenamiento de patinadoras juveniles, acompañando su preparación física con masaje y técnicas específicas.</li>
                     </ul>
-                    <p>Durante estas prácticas, adquirí experiencia en el uso de equipos complementarios y técnicas específicas como:</p>
-                    <ul>
-                        <li>TENS (electroestimulación) para el manejo del dolor y relajación muscular</li>
-                        <li>Presoterapia para mejorar la circulación y el drenaje en extremidades inferiores</li>
-                        <li>Crioterapia y termoterapia, utilizadas según el objetivo terapéutico</li>
-                        <li>Ventosas para descontracturar zonas de alta carga y mejorar el flujo sanguíneo.</li>
-                    </ul>
-                    <h4>Logros Académicos</h4>
-                    <p>Durante mi formación en masoterapia, fui reconocida en dos años consecutivos con distinciones académicas por mi desempeño, compromiso y excelencia en el proceso formativo. Estos logros fueron otorgados oficialmente por la institución, acompañados de certificados entregados en ceremonia académica, destacando entre los mejores estudiantes del programa en ambos periodos.</p>
-                </div>
-                
-                <div class="tab-content" id="info3">
+                </article>
+
+                <!-- Referencias -->
+                <div class="refs reveal">
                     <h3>Referencias</h3>
-                    <h4>Docente de anatomofisiología</h4>
-                    <ul>
-                        <li>Rodrigo Quintanilla</li>
-                        <li>+569 6192 2629</li>
+                    <ul class="refs-grid">
+                        <li><strong>Rodrigo Quintanilla</strong><span>Docente de anatomofisiología</span></li>
+                        <li><strong>Felipe Lizana</strong><span>Docente kinesiólogo de práctica</span></li>
+                        <li><strong>Andrés González</strong><span>Docente de técnicas de masoterapia</span></li>
+                        <li><strong>Recovery Pro</strong><span>Centro de rehabilitación · <a href="tel:+56962910600">+56 9 6291 0600</a></span></li>
                     </ul>
-                    <h4>Docente Kinesiólogo de práctica</h4>
-                    <ul>
-                        <li>Felipe Lizana</li>
-                        <li>+569 654 2188</li>
-                    </ul>
-                    <h4>Docente de técnicas de masoterapia</h4>
-                    <ul>
-                        <li>Andrés Gonzalez</li>
-                        <li>+569 109 4684</li>
-                    </ul>
-                    <h4>Centro de rehabilitación Recovery Pro</h4>
-                    <ul>
-                        <li>+569 6291 0600</li>
-                    </ul>
+                    <p class="refs-note">Contacto de referencias personales disponible a solicitud.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="services">
-        <div class="container">
-            <h2>Mis Servicios</h2>
-            <div class="tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="servicio1">Masaje Deportivo</button>
-                    <button class="tab-btn" data-tab="servicio2">Masaje Terapéutico</button>
-                    <button class="tab-btn" data-tab="servicio3">Masaje Relajante</button>
-                    <button class="tab-btn" data-tab="servicio4">Masaje Descontracturante</button>
-                    <button class="tab-btn" data-tab="servicio5">Reflexología Podal</button>
-                </div>
-                
-                <div class="tab-content active" id="servicio1">
-                    <h3>Masaje deportivo</h3>
-                    <p>El masaje deportivo es una técnica de terapia manual enfocado en mejorar el denfiminto físico, prevenir lesiones y acelerar la recuperación muscular en personas activas o deportistas.</p>
-                    <p>Se aplica antes, durante o después de la actividad física, según el objetivo.</p>
-                    <h4>¿Por qué hacerse un masaje deportivo?</h4>
-                    <ul>
-                        <li>Prevención de lesiones</li>
-                        <li>Recuperación muscular</li>
-                        <li>Alivio del dolor</li>
-                        <li>Mejora el rendimiento</li>
-                        <li>Mejora la flexibilidad</li>
-                        <li>Reduce la tensión muscular acumulada</li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="tab-content" id="servicio2">
-                    <h3>Masaje terapéutico</h3>
-                    <p>El masaje terapéutico es una técnica manual utilizada para aliviar dolores musculares, mejorar la movilidad, reducir tensiones y favorecer la recuperación de lesiones.</p>
-                    <h4>Lesiones o afecciones más comunes que se tratan con masaje terapéutico:</h4>
-                    <ul>
-                        <li>Contracturas musculares</li>
-                        <li>Lumbalgia o lumbago (dolor en la zona lumbar)</li>
-                        <li>Dorsalgia (dolor en la zona dorsal)</li>
-                        <li>Cervicalgia (dolor en la zona del cuello)</li>
-                        <li>Esguinces leves (etapa subaguda o crónica)</li>
-                        <li>Tendinopatías</li>
-                        <li>Ciática (dolor por irritación del nervio ciático)</li>
-                        <li>Sobrecargas musculares</li>
-                        <li>Lesiones por esfuerzo repetitivo (ejemplo: Síndrome del tunel carpiano)</li>
-                        <li>Dolores poturales crónicos</li>
-                        <li>Recuperación muscular post quirurgica (con indicación médica)</li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="tab-content" id="servicio3">
-                    <h3>Masaje relajante</h3>
-                    <p>El masaje relajante es una técnica suave y leenta que busca disminuir el estrés, aliviar tensiones musculares y promover una senación general de bienestar. Se realiza con movimientos largos, envolventes y rítmicos, que estimulan el sistema nervioso parasimpático, ayudando a calmar el cuerpo y la mente.</p>
-                    <h4>¿Por qué hacerse un masaje relajante?</h4>
-                    <ul>
-                        <li>Reduce el estrés y la ansiedad</li>
-                        <li>Mejora la calidad del sueño</li>
-                        <li>Alivia dolores musculares leves y tensiones musculares</li>
-                        <li>Favorece la circulación sanguinea y linfática</li>
-                        <li>Aporta una sensación profunda de calma y bienestar</li>
-                    </ul>
-                    
-                </div>
-
-                <div class="tab-content" id="servicio4">
-                    <h3>Masaje descontracturante</h3>
-                    <p>El masaje descontracturante es una técnica terapéurica enfocada en liberar tensiones musculares profundas y tratar contracturas provocadas por estrés, malas posturas, esfuerzo físico o sedentarismo. Se aplican maniobras firmes y lentas sobre zonas específicas, como espalda, cuello y hombros, para aliviar el dolor y recuperar la movilidad.</p>
-                    <h4>¿Por qué hacerse un masaje descontracturante?</h4>
-                    <ul>
-                        <li>Alivia dolores musculares causados por contracturas</li>
-                        <li>Mejora la fexibilidad y movilidad de los tejidos</li>
-                        <li>Corrige las postura al liberar zonas rígidas</li>
-                        <li>Mejora la circulación sanguínea en áreas afectadas</li>
-                    </ul>
-                    
-                </div>
-
-                <div class="tab-content" id="servicio5">
-                    <h3>Reflexología podal</h3>
-                    <p>La reflexología podal es una técnica de terapia manual que se basa en la estimulación de puntos o zonas reflejas en la planta del pie, los cuales se asocian con distintos órganos o sistemas del cuerpo. Se busca inducir una respuesta de relajación y equilibrio global del organismo, favoreciendo la auto regulación y la sensación de bien estar.</p>
-                    <h4>¿Por qué hacerse una reflexología podal?</h4>
-                    <ul>
-                        <li>Relajación y reducción del estrés</li>
-                        <li>Mejora de la circulación sanguínea local (Produce una sensación de ligeresa en piernas y pies)</li>
-                        <li>Alivio de molestias (Muchas personas perciben una reducción de cefaleas tensionales, fatiga o malestares digestivos leves consecuencia a la relajación general)</li>
-                        <li>Consciencia corporal (Permite detectar zonas de tensión o sensibilidad en los pies que se suelen reflejar patrones posturales o emocionales)</li>
-                    </ul>
-                    <!-- <p><strong>Costo:</strong> $XXX</p>  --> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-grid">
-                <div class="contact-column">
-                    <h3>Lugares de atención</h3>
-                    <ul class="contact-list">
-                        <li>
-                            <span>Talagante</span>
-                            <span>Calident, Jospe Leyán #805, piso 2</span>
-                            <a href="https://maps.app.goo.gl/NUuhQBxaPGRCGyFYA" target="_blank" class="map-link">
-                                Ver en mapa
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="contact-column">
-                    <h3>Teléfono</h3>
-                    <ul class="contact-list">
-                        <li>
-                            <a href="https://w.app/ngfysa" class="whatsapp-btn">
-                                <img src="./assets/wsp-icon.png" alt="WhatsApp" width="20">
+        <!-- Contacto -->
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-intro">
+                        <p class="eyebrow">Contacto</p>
+                        <h2>Agenda tu sesión</h2>
+                        <p>Escríbeme por WhatsApp para coordinar día y horario, o sígueme en Instagram para conocer más de mi trabajo.</p>
+                        <div class="contact-actions">
+                            <a href="https://w.app/ngfysa" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.3-2.3l.9-1-1-2z"/></svg>
                                 Enviar mensaje
                             </a>
-                        </li>
-                    </ul>
-                </div>
+                            <a href="https://www.instagram.com/rincondelrelax_?igsh=MTVqeGFrazRvb3N5" class="btn btn-instagram" target="_blank" rel="noopener">
+                                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+                                Seguir en Instagram
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="contact-column">
-                    <h3>Redes sociales</h3>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rincondelrelax_?igsh=MTVqeGFrazRvb3N5" class="instagram-btn" target="_blank">
-                            <img src="./assets/instagram-icon2.png" alt="Instagram" width="20">
-                            Seguir en Instagram
+                    <div class="contact-place">
+                        <h3>Lugar de atención</h3>
+                        <p class="place-city">Talagante</p>
+                        <p>Calident, José Leyán #805, piso 2</p>
+                        <a href="https://maps.app.goo.gl/NUuhQBxaPGRCGyFYA" target="_blank" rel="noopener" class="map-link">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></svg>
+                            Ver en mapa
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <script>
-        document.querySelectorAll('.tab-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const tabContainer = button.closest('.tabs');
-                const tabId = button.getAttribute('data-tab');
-                
-                tabContainer.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                
-                tabContainer.querySelectorAll('.tab-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                
-                document.getElementById(tabId).classList.add('active');
-                button.classList.add('active');
-            });
-        });
-    </script>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Diana Barrera Orozco · Masoterapeuta</p>
+            <a href="https://www.instagram.com/rincondelrelax_?igsh=MTVqeGFrazRvb3N5" target="_blank" rel="noopener">@rincondelrelax_</a>
+        </div>
+    </footer>
+
+    <a href="https://w.app/ngfysa" class="wsp-float" target="_blank" rel="noopener" aria-label="Reservar por WhatsApp">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.3-2.3l.9-1-1-2z"/></svg>
+    </a>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
